@@ -1,0 +1,29 @@
+.title-container{
+    position: relative;
+    /* animation: from-left 1s; */
+}
+.bigTitle{
+    font-size: 4rem;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 800px) { /* mobile */
+    .title-container{
+        animation: apear .5s !important;
+    }
+    .bigTitle{
+        font-size: 2.7rem;
+    }
+    #home{
+        padding: 20px 0;
+    }
+}
+
+/* animation */
+
+@keyframes fly {
+    from{
+        
+    }
+}

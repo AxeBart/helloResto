@@ -1,0 +1,50 @@
+.footer{
+    height: auto;
+    background-color: rgb(132, 78, 7);
+    color: white;
+}
+.footer-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.footer-content>*{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+
+/* Social Dock */
+.social-network{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.follow{
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.follow:hover{
+    position: inherit;
+    background: rgb(71, 42, 0);
+}
+
+
+.wtp:hover{
+    color: rgb(36, 182, 13);    
+}
+.insta:hover{
+    color: rgb(171, 3, 87);
+}
+.youtube:hover{
+    color: red;
+} 
+.fb:hover{
+    color: rgb(56, 56, 255);
+}

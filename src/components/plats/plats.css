@@ -1,0 +1,37 @@
+
+.panel-res{
+    height: auto;
+}
+.cardInfo{
+    height: auto;
+    transition: 300ms;
+    position: relative;
+}
+
+.miniPlate{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    position: auto;
+    top: auto;
+    padding: 0; margin: 0;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 800px) { /* mobile */
+    .cardInfo{
+        /* padding: 10px; */
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .miniPlate{
+        height: 200px;
+        width: 100%;
+        background-color: red;
+        position: auto;
+        top: auto;
+        padding: 0; margin: 0;
+    }
+}

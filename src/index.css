@@ -1,0 +1,302 @@
+
+*{
+    scroll-behavior: smooth;
+    /* color-scheme: dark; */
+}
+.panel{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.acceuil{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    color: white;
+    background-color: rgb(132, 78, 7);
+    padding: 10px 15px;
+    margin: 10px 0px;
+}
+.btn-vide{
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgba(246, 139, 0, 0.626);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #f68b00;
+    box-shadow: 0px 0 50px 0px rgba(246, 139, 0, 0.626);
+    transition: 1s;
+}
+
+.btn-lighting{
+    animation: btn-lighting 1.5s infinite;
+}
+/* animation btn */
+@keyframes btn-lighting {
+    0%{
+        background-color: #f68b00;
+        box-shadow: 0px 0 50px 0px rgba(246, 139, 0, 0.626);
+    }
+    50%{
+        background-color: rgb(132, 78, 7);
+        box-shadow: none;
+    }
+    100%{
+        background-color: #f58b00;
+        box-shadow: 0px 0 50px 0px rgba(246, 139, 0, 0.626);
+    }
+}
+
+
+
+/* Animations Slide*/
+
+/* from left */
+.s1,.s2,.s3,.s4{
+    position: relative;
+}
+.s1{
+    animation: slide 300ms;
+}
+.s2{
+    animation: slide 400ms;
+}
+.s3{
+    animation: slide 500ms;
+}
+.s4{
+    animation: slide 600ms;
+}
+@keyframes slide {
+    0%{
+        left: -50px;
+        opacity: 0;
+    }
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+/* from right */
+.sr1,.sr2,.sr3,.sr4{
+    position: relative;
+}
+.sr1{
+    animation: slideRight 300ms;
+}
+.sr2{
+    animation: slideRight 400ms;
+}
+.sr3{
+    animation: slideRight 500ms;
+}
+.sr4{
+    animation: slideRight 600ms;
+}
+@keyframes slideRight {
+    0%{
+        right: -50px;
+        opacity: 0;
+    }
+    100%{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+/* ******************************* */
+
+/* from bottom */
+.fb1,.fb2,.fb3,.fb4{
+    position: relative;
+}
+.fb1{
+    animation: fromBottom 300ms;
+}
+.fb2{
+    animation: fromBottom 400ms;
+}
+.fb3{
+    animation: fromBottom 500ms;
+}
+.fb4{
+    animation: fromBottom 600ms;
+}
+@keyframes fromBottom {
+    0%{
+        top: 50px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+/* ******************************* */
+
+/* from top */
+.ft1,.ft2,.ft3,.ft4{
+    position: relative;
+}
+.ft1{
+    animation: fromTop 300ms;
+}
+.ft2{
+    animation: fromTop 400ms;
+}
+.ft3{
+    animation: fromTop 500ms;
+}
+.ft4{
+    animation: fromTop 600ms;
+}
+@keyframes fromTop {
+    0%{
+        top: -20px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+/* ******************************* */
+
+
+.view{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
+}
+
+/* Stylise scroll bar */
+
+::-webkit-scrollbar{
+    background-color: rgba(67, 10, 10);
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 166, 0, 0.379);
+    border-radius: 50px;
+}
+
+/* font */
+.icon{
+    font-family: Icon-font !important;
+}
+
+@font-face {
+    font-family: Icon-font;
+    src: url("./font/icon_font.ttf") format('truetype');
+}
+
+.apear{
+    animation: apear .5s !important;
+}
+/* responsive design */
+
+
+@media only screen and (max-width: 800px) { /* mobile */
+    /* Plats */
+    .panel{
+        height: auto !important;
+        animation: apear .1s !important;
+    }
+
+    .card{
+        animation: apear .5s !important;
+    }
+    
+    .handitem{
+        background-color: brown;
+        padding: 0px 10px;
+        height: 15vh;
+        width: 95%;
+    }
+    .panel{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .acceuil{
+        display: block;
+        justify-content: center;
+    }
+    .footer{
+        height: auto;
+    }
+    .footer-content{
+        display: block;
+        height: 100%;
+    }
+    .footer-part{
+        width: 100%;
+    }
+}
+
+
+
+/* animation des differents items sur l'ecran */
+@keyframes fromLeft {
+    0%{
+        left: -100vw
+    }
+    100%{
+       left: 0;
+    }
+}
+
+@keyframes apear {
+    0%{
+        /* margin-top : 5px; */
+        opacity: 0;
+    }
+    50%{
+        /* margin-top : 0px; */
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes from-left {
+    0%{
+        opacity: 0.5;
+        left: -100px;
+        top: 100px;
+    }
+    50%{
+        opacity: 1;
+        left: 0;
+        top: 100px;
+    }
+    100%{
+        top: 0;
+    }
+    
+}
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
